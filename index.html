@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<title>群利个人站</title>
+	<link rel="stylesheet" type="text/css" href="style/css/index.css">
+	<script type="text/javascript" src="style/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="style/js/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="style/js/index.js"></script>
+	<script type="text/javascript" src="style/js/suipian.js"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			running();
+			run2();
+			nav1();	
+			suipian(5000);
+			$(".header-cont .rightnav a").click(function(){
+				var page = $(this).index();
+				if(page<0){
+					page=0;
+				}
+				if(page>4){
+					page=4;
+				}
+				$("#content").stop(true).animate({"top": (-100 * page +100)+ "%"},1000);
+				$(".header-cont .rightnav a").eq(page).addClass('cur').siblings().removeClass('cur');
+			});
+		}
+	</script>
+</head>
+<body>
+<div id="bigbox">
+<!--欢迎页-->
+	<div id="welcome">
+		<span>进入主页</span>
+	</div>
+<!--大盒子-->
+	<div id="content">	
+<!--第一版-->
+	<div class="layout-one">
+		<div class="tutu">
+			<img class="zhentu" src="style/images/banner2.jpg" alt="">
+		</div>
+		<div class="header">
+		<div class="header-cont">
+			<div class="rightnav">
+				<a href="#">首页</a>
+				<a href="#">网页作品</a>
+				<a href="#">UI作品</a>
+				<a href="#">关于我</a>
+				<a href="#">联系我</a>
+			</div>	
+			<h1><a href="#"><!-- <img src="style/images/logo.png"> --></a></h1>
+		<nav>
+			<ul>
+			<li>
+				<div>
+					<span><a href="#"  class="n1">首页</a></span>
+					<span><a href="#" class="n2">首页</a></span>
+				</div>
+			</li>
+			<li>
+				<div>
+					<span><a href="#" class="n1">网页作品</a></span>
+					<span><a href="#" class="n2">网页作品</a></span>
+				</div>
+			</li>
+			<li>
+				<div>
+					<span><a href="#" class="n1">UI作品</a></span>
+					<span><a href="#" class="n2">UI作品</a></span>
+				</div>
+			</li>
+			<li>
+				<div>
+					<span><a href="#" class="n1">关于我</a></span>
+					<span><a href="#" class="n2">关于我</a></span>
+				</div>
+			</li>
+			<li>
+				<div>
+					<span><a href="#" class="n1">联系我</a></span>
+					<span><a href="#" class="n2">联系我</a></span>
+				</div>
+			</li>	
+		</ul>
+	</nav>
+		</div>
+		</div>
+	</div>
+<!--第二版-->
+		<div class="layout-two">
+			<div class="two-cont">
+				<div class="t-c-top">
+					<dl class="dl-one">
+						<dt><a href="huace.html" target="_blank">画册展示</a></dt>
+						<dd><a href="huace.html" target="_blank"><img src="style/images/layout2_pic1.jpg"></a></dd>
+					</dl>
+					<dl>
+						<dt><a href="kaka/html/index.html" target="_blank">网页设计</a></dt>
+						<dd><a href="kaka/html/index.html" target="_blank"><img src="style/images/layout2_pic2.jpg"></a></dd>
+					</dl>
+					<dl>
+						<dt><a href="#">UI设计</a></dt>
+						<dd><a href="#" ><img src="style/images/layout2_pic3.jpg"></a></dd>
+					</dl>
+				</div>
+			<div class="t-c-bottom">
+				<dl>
+					<dt><a href="juxingyuan/html/index.html"  target="_blank"><img src="style/images/layout2_pic4-1.jpg"></a></dt>
+					<dd><a href="juxingyuan/html/index.html" target="_blank"><img src="style/images/layout2_pic4.jpg"></a></dd>
+				</dl>
+				<dl>
+					<dt><a href="pinchuang/html/index.html" target="_blank"><img src="style/images/layout2_pic5-1.jpg"></a></dt>
+					<dd><a href="pinchuang/html/index.html" target="_blank"><img src="style/images/layout2_pic5.jpg"></a></dd>
+				</dl>
+				<dl>
+					<dt><a href="pubuliu.html" target="_blank"><img src="style/images/layout2_pic6-1.jpg"></a></dt>
+					<dd><a href="pubuliu.html" target="_blank"><img src="style/images/layout2_pic6.jpg"></a></dd>
+				</dl>
+			</div>
+		</div>
+		</div>
+<!--第三版-->
+		<div class="layout-three">
+			<div class="three-cont">
+				<div class="imagelist">
+					<ul>
+						<li class="no0"><a href="#"><img src="style/images/0.jpg" alt="" /></a></li>
+						<li class="no1"><a href="#"><img src="style/images/1.jpg" alt="" /></a></li>
+						<li class="no2"><a href="#"><img src="style/images/2.jpg" alt="" /></a></li>
+						<li class="no3"><a href="#"><img src="style/images/3.jpg" alt="" /></a></li>
+						<li class="no4"><a href="#"><img src="style/images/4.jpg" alt="" /></a></li>
+						<li class="no5"><a href="#"><img src="style/images/5.jpg" alt="" /></a></li>
+						<li class="no6"><a href="#"><img src="style/images/6.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+					<span class="arow-l">
+					<a href="#"><img src="style/images/arow-l.png" ></a>
+				</span>
+				<div class="t-c-left"></div>
+				<div class="t-c-center"></div>
+				<div class="t-c-right"></div>
+				<span class="arow-r">
+					<a href="#"><img src="style/images/arow-r.png"></a>
+				</span>
+			</div>
+		</div>
+<!--第四版-->
+		<div class="layout-four">
+			<div class="four-cont">
+				<div class="four-top">
+					<h2>My combat</h2>
+					<p>精通PS、AI、FW、DW、等软件，有网站项目经验；大学专业是软件工程，eclipse，mysql等软件也都熟悉，重要的是一个立体的知识体系的学习。</p>
+					<p>DIV+CSS，javaScript，jQuery等主流技术，完全可以达到前端工程师级别，仿做过一些上线网站。目前在研究移动端那方面的技术，html5,css3，本站就是用这个技术做的，所以相对来说比较炫酷。抓住移动端，抓住未来。</p>
+				</div>
+				<div class="four-center">
+					<img class="myphoto" src="style/images/myphoto.jpg"/>
+					<img class="photo" src="style/images/photo.png"/>
+				</div>
+				<div class="four-right">
+					<h2>About me</h2>
+					<p>我爱设计，也喜欢代码，怀揣着一份对互联网的热情与执着，当一名成功的IT女是我的梦想。IT业是一条漫长而伟大的道路，尽管道路曲折，它都值得一辈子去为之付出，需要我们热爱生活，感悟生命。</p>
+					<p>非常热爱互联网，做了半年多前端，写了两年多代码，一直是用一颗虔诚的心去面对它。我想，每一位用心去做前端的人，都是一个有责任心的人。</p>
+				</div>
+			</div>
+		</div>
+<!--第五版-->
+		<div class="layout-five">
+			<div class="five-cont">
+				<span class="line"></span>
+				<a href="jl.html" class="me" title="点击查看个人简历" target="_blank"></a>
+				<a href="jl.html" class="mobile" title="点击查看个人简历" target="_blank"></a>
+				<a href="jl.html" class="qq" title="点击查看个人简历" target="_blank"></a>
+				<a href="jl.html" class="email" title="点击查看个人简历" target="_blank"></a>
+				<a href="jl.html" class="more" title="点击查看个人简历" target="_blank">更多>></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
